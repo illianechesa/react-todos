@@ -3,10 +3,10 @@ import React from 'react'
 
 function About() {
   return (
-    <React.Fragment>
+    <div style={{margin: '20px'}}>
       <h1>About</h1>
-      <p>This is the TodoList app v1.0.0. It is part of a React crash course</p>
-    </React.Fragment>
+      <p>This is a way to try routing with React</p>
+    </div>
   )
 }
 

@@ -9,6 +9,8 @@ import {v4 as uuidv4} from 'uuid';
 import axios from 'axios';
 
 import './App.css';
+import Footer from './components/layout/Footer'
+
 
 class App extends Component {
   state = {
@@ -17,7 +19,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+      .get('https://jsonplaceholder.typicode.com/todos?_limit=5')
       .then(res => this.setState({ todos: res.data }));
   }
 
@@ -76,6 +78,7 @@ class App extends Component {
               )}
             />
             <Route path="/about" component={About} />
+            <Footer />
           </div>
         </div>
       </Router>
